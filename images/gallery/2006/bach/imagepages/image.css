@@ -1,0 +1,26 @@
+body {
+  background-color: #000000;
+  color: #BEBEBE;
+}
+
+a:link {color: #FF9900;}
+
+a:visited {color: #FF9900;}
+
+a:active {color: #FF9900;}
+
+.navigationtext {
+  font-family: monotype corsiva;
+}
+
+.imagetitle {
+  font-family: monotype corsiva;
+  font-size: 14pt;
+  font-weight: bold;
+  color: BEBEBE;
+  background-color: 000000;
+}
+
+.imagequicklist {
+  font-family: monotype corsiva;
+}

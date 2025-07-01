@@ -1,0 +1,68 @@
+# This file contains parameter values for the form-mail program uniformmail.pl
+# For security reasons, many of the url parameters should be restricted.
+# If you modify this file, keep a copy of the original as a reference.
+# It is recommended that public access to this file should be NIL.
+#
+# NOTES
+# 1) uniformmail.pl will accept as a parameter 'params=paramfile' to specify a different
+#    parameter file. If the file does not exist, the file 'uniformmail.params' is used instead.
+#
+# 2) parameter_name =   : Use the url parameter (value following '?' char).
+#    parameter_name = * : This means take default action.
+#                         Usually the url parameter is ignored.
+#    parameter_name = ! : Ignore the url parameter - use blank value.
+#
+# 3) domain is a special case. If domain = *, the environment variable SERVER_NAME
+#    is used but any 'www.' prefix is removed.
+#    It is used by email address parameters (to, cc, from, etc.)
+#    There is no equivalent url parameter.
+#
+# 4) referrer is a special case. Normally it should be blank or ! to disable referrer checking.
+#    If referrer is not blank the script will only run if called from a page on the specified
+#    domain. However, THE SCRIPT WILL FAIL if the browser does not send referral data.
+#    There is no equivalent url parameter.
+#
+# 5) If an address value does not contain '@' it is treated as a domain name. In this case,
+#    url parameters must use one of the following formats :-
+#      "display name"<username@> , "display name"<username::> , username@ , username::
+#    The domain name will be added to the parameter value.
+#
+# 6) By default :- 
+#      the 'from', 'subject' and 'priority' values are blank (leaving the url parameters fully enabled).
+#      the 'ticket' value is blank (but cannot be specified by url)
+#      destination email addresses are restricted to the host domain.
+
+mailserver = localhost
+             # e.g. 'smtp.yourdomain.com' or 'mail.yourdomain.com' or simply 'yourdomain.com'
+             # On some systems, 'localhost' or 'mailhost' may be preferred.
+             # DO NOT place quotes around the value.
+
+domain   = * # * = detect this domain. See notes above. 
+referrer = ! # * = limit use to this domain. NOT RECOMMENDED.
+             # e.g. referrer = anotherdomain.com
+             # There is no corresponding url parameter
+
+verify   = ! # If verify = 1, verification of recipient addreses is requested.
+
+to       = <lemusa@ahoythere.co.nz> # * = limit to the domain value specified above. See notes above.
+cc       = * # ...ditto
+bcc      = * # ...ditto
+return   = ! # The return address - this MUST NOT contain a quoted "display name".
+
+from     = ahoythere.co.nz  # e.g. "GeeWhizz form mail"<formmail@geewhizz.com>
+replyto  = ! # e.g. "Gee Whizz support"<support@geewhizz.com> 
+priority =   # Normally leave blank so that this may be specified in the url.
+subject  = ahoythere.co.nz - Comment  # ...ditto
+ticket   =   # ...ditto
+             # e.g. ticket=suggestions.ticket,3000
+             # The first part is a filename. The ticket base number is optional.
+             # e.g. ticket=support.ticket,55h
+             # h may be used as a suffix to indicate hex format tickets.
+
+timeout  = ! # The required smtp server response time in seconds. Default is 20.
+
+success  = ! # URL - The page displayed if successful. This must include http:// etc.
+error    = ! # ...ditto for error page.
+
+debug    = ! # Use 1 when testing to display diagnostic information.
+body     = ! # Normally disable the url parameter.

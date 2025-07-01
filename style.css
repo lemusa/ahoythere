@@ -1,0 +1,78 @@
+body {
+background-color: #000000;
+font-family: verdana;
+font-size: 10pt;
+color: #AEAEAE;
+font-weight: normal;
+margin: 10px;
+}
+blockquote {
+font-weight: normal;
+}
+div {
+font-weight: normal;
+}
+p {
+font-size: ;
+font-weight: normal;
+}
+span {
+font-weight: normal;
+}
+td {
+font-weight: normal;
+}
+h1 {
+color: #ff9900;
+}
+h2 {
+color: #ff9900;
+}
+h3 {
+color: #ff9900;
+}
+h4 {
+color: #ff9900;
+}
+ol {
+font-weight: normal;
+}
+ul {
+font-weight: normal;
+}
+input {
+font-weight: normal;
+}
+select {
+font-weight: normal;
+}
+textarea {
+font-weight: normal;
+}
+hr {
+color: #AEAEAE;
+height: 1px;
+width: 800px;
+  margin-left: auto;
+  margin-right: auto
+}
+a:active, a:link, a:visited {
+color: #ff9900;
+font-weight: normal;
+text-decoration: none;
+}
+a:hover {
+color: #AEAEAE;
+font-weight: bold;
+text-decoration: none;
+}
+div#outer {
+    width: 800px;
+    background-color:#000000;
+    margin-top: 1px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    height: auto;
+}

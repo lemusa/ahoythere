@@ -1,0 +1,14 @@
+H2, H3 {
+  font-family   : monotype corsiva;
+  font-weight   : bold;
+  margin-bottom : 0.15em;
+  margin-top    : 1.0em;
+}
+
+H2 { font-size : 20pt; 
+     color     : #2000C0 }
+
+H3 { font-size : 16pt;
+     color     : #A00020 }
+
+P, PRE { margin : 0px } 

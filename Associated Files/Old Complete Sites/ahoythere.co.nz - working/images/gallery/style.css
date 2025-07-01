@@ -1,0 +1,68 @@
+body {
+background-color: #000000;
+font-family: "Monotype Corsiva";
+font-size: 14pt;
+color: #AEAEAE;
+font-weight: normal;
+margin: 10px;
+scrollbar-base-color: #AEAEAE;
+scrollbar-arrow-color: #ff9900;
+}
+blockquote {
+font-weight: normal;
+}
+div {
+font-weight: normal;
+}
+p {
+font-size: ;
+font-weight: normal;
+}
+span {
+font-weight: normal;
+}
+td {
+font-weight: normal;
+}
+h1 {
+color: #ff9900;
+}
+h2 {
+color: #ff9900;
+}
+h3 {
+color: #ff9900;
+}
+h4 {
+color: #ff9900;
+}
+ol {
+font-weight: normal;
+}
+ul {
+font-weight: normal;
+}
+input {
+font-weight: normal;
+}
+select {
+font-weight: normal;
+}
+textarea {
+font-weight: normal;
+}
+hr {
+color: #AEAEAE;
+height: 1px;
+width: 800px;
+}
+a:active, a:link, a:visited {
+color: #ff9900;
+font-weight: normal;
+text-decoration: none;
+}
+a:hover {
+color: #AEAEAE;
+font-weight: bold;
+text-decoration: none;
+}
